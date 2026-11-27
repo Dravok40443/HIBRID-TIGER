@@ -1,3 +1,4 @@
+<img width="1600" height="900" alt="WhatsApp Image 2026-11-27 at 11 26 09" src="https://github.com/user-attachments/assets/b4089396-71e9-4194-aae6-e0eb154bd15b" />
 # 🐯 HIBRID-TIGER
 
 > **CONTROL IS AN ILLUSION**
