@@ -67,3 +67,76 @@ Dual-mode Windows console toolkit for defensive triage, heuristic analysis, syst
     ├── Passive DNS & CT Subdomains (crt.sh)
     ├── Web Posture & Headers Audit
     └── Custom AV & Heuristic Scanner
+```
+
+---
+
+## ⚙️ Step-by-Step Windows Setup & Execution
+
+### 1. Install Python & Git on Windows
+
+1. **Python (3.9 or higher):**
+   - Download from [python.org/downloads](https://www.python.org/downloads/) or install via Windows Terminal (`winget install Python.Python.3.12`).
+   - **Important:** During installation, check **"Add Python to PATH"**.
+2. **Git for Windows:**
+   - Download from [git-scm.com/download/win](https://git-scm.com/download/win) or install via Windows Terminal (`winget install Git.Git`).
+
+Verify both are working in **PowerShell** or **CMD**:
+
+```powershell
+py --version
+git --version
+```
+
+---
+
+### 2. Clone the Repository & Run
+
+Open **PowerShell** or **CMD** (run as **Administrator** if you plan to use Windows De-Bloat policies or Defender scans) and run each command in order:
+
+```powershell
+# 1. Clone the repository
+git clone https://github.com/Dravok40443/HIBRID-TIGER.git
+
+# 2. Enter the project folder
+cd HIBRID-TIGER
+
+# 3. Install Python dependencies
+py -m pip install -r requirements.txt
+
+# 4. Launch HIBRID-TIGER
+py script.py
+```
+
+---
+
+### 3. Alternative: Run Without Git (ZIP Download)
+
+1. Click **Code** -> **Download ZIP** on this GitHub page.
+2. Extract the `HIBRID-TIGER-main.zip` folder anywhere on your PC.
+3. Open **PowerShell** or **CMD** inside the extracted folder.
+4. Install requirements and start the tool:
+
+```powershell
+py -m pip install -r requirements.txt
+py script.py
+```
+
+---
+
+## 🎮 Inside the Menu
+
+- **ANGEL TIGER (Default Mode):** Starts automatically on boot. Select option **`1`** (`Auto-Install Dependencies & OSINT`) on your first run so the toolkit downloads and configures all external OSINT repositories automatically.
+- **EVIL TIGER (Recon & OSINT Mode):** Select option **`9`** (`Admin`) inside Angel Tiger to switch interfaces, or option **`6`** inside Evil Tiger to return to Angel Tiger.
+
+---
+
+## 🔄 Updating Your Local Copy
+
+To pull future updates from GitHub into your local folder:
+
+```powershell
+cd HIBRID-TIGER
+git pull
+py -m pip install -r requirements.txt
+```
